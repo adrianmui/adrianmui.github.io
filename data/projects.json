@@ -1,0 +1,37 @@
+{
+  "Fideligard": {
+    "title": "Fideligard Yahoo-Finance API Stocks",
+    "thumbnail": "img/portfolio/thumbnails/fideligard.jpg",
+    "imgUrl": "http://i.imgur.com/JC1qT11.png",
+    "demoUrl": "https://boiling-eyrie-10872.herokuapp.com/",
+    "gitUrl": "https://github.com/adrianmui/better_home",
+    "tags": ["Angular", "ui.router"]
+  },
+
+  "BetterHome": {
+    "title": "Better Home",
+    "thumbnail": "img/portfolio/thumbnails/better_home.jpg",
+    "imgUrl": "https://camo.githubusercontent.com/dfa0cbe64d837876b0c78f7b7a06891e02964a18/687474703a2f2f692e696d6775722e636f6d2f38576f42454f4f2e706e67",
+    "demoUrl": "https://boiling-eyrie-10872.herokuapp.com/",
+    "gitUrl": "https://github.com/adrianmui/better_home",
+    "tags": ["Rails", "API", "OmniAuth"]
+  },
+
+  "Danebook": {
+    "title": "Danebook",
+    "thumbnail": "img/portfolio/thumbnails/danebook.jpg",
+    "imgUrl": "https://camo.githubusercontent.com/ececcb8e17450d2b340dfea2ad54f7c394875ab3/687474703a2f2f692e696d6775722e636f6d2f514e55474231352e706e67",
+    "demoUrl": "https://daneb00k.herokuapp.com/",
+    "gitUrl": "https://github.com/adrianmui/project_danebook",
+    "tags": ["Rails", "Database", "FullStack"]
+  },
+
+  "Djello": {
+    "title": "Djello",
+    "thumbnail": "img/portfolio/thumbnails/1.jpg",
+    "imgUrl": "https://i.ytimg.com/vi/aaDf1RqeLfo/maxresdefault.jpg",
+    "demoUrl": "https://github.com/adrianmui/project_djello",
+    "gitUrl": "https://github.com/adrianmui/project_danebook",
+    "tags": ["Angular", "ui.router", "Rails", "FullStack"]
+  }
+}

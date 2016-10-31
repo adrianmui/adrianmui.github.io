@@ -2,45 +2,50 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Creative - Start Bootstrap Theme</title>
+    <title>Adrianmui.me</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Core Libraries -->
+        <!--Lo-Dash -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.16.1/lodash.js"></script>
+        <!-- jQuery-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+        <!-- Angular -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+    <!-- Controller, Directives, Services -->
+        <script src="app.js"></script>
+        <!-- Controllers -->
+        <script src="angular/controllers/main_controller.js"></script>
+        <!-- Services -->
+        <script src="angular/services/project_service.js"></script>
+        <!-- Directives -->
+        <script src="angular/directives/project_directive.js"></script>
+        
+    <!--CSS stylesheet-->
+        <!-- library/plugins-->
+        <script src="vendor/angular-ui/angular-ui-router.js"></script>
+        <!-- Plugin CSS -->
+        <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+        <!-- Bootstrap Core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Theme CSS -->
+        <link href="css/creative.css" rel="stylesheet">
+        <!--Dev Icons CSS -->
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
     <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    
-    <!--Dev Icons CSS -->
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
-
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-    <!-- Theme CSS -->
-    <link href="css/creative.css" rel="stylesheet">
-
-    <!-- <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/css/mdb.min.css'>
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/js/mdb.min.js'> -->
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 </head>
 
-<body id="page-top">
+<body id="page-top" ng-app="app" ng-controller="MainCtrl">
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -93,7 +98,7 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">About Me</h2>
                     <hr class="light">
-                    <p class="text-faded">I'm a passionate Full Stack Developer, redditor, and expert gamer. I mainly code in Ruby, Rails, and all things Angular. I like making stuff that works! I believe in a healthy medium that connects users(intuitive interface) with an intelligent backend. I recently graduated from <a href="https://www.vikingcodeschool.com/" style="color: white">The Viking Code School's</a> 1000+ hour Immersive Software Engineering program. Loved every minute of it and I can't wait to see what comes next!</p>
+                    <p class="text-faded">I'm a passionate Full Stack Developer, redditor, and expert gamer. I mainly code in Ruby, Rails, and all things Angular. I like making stuff that works!</p>
 
                     <div class="col-lg-6 col-md-6 text-center">
                         <div class="service-box">
@@ -182,66 +187,7 @@
     <section class="no-padding" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
-                <div class="col-lg-6 col-sm-6">
-                    <a href="https://camo.githubusercontent.com/dfa0cbe64d837876b0c78f7b7a06891e02964a18/687474703a2f2f692e696d6775722e636f6d2f38576f42454f4f2e706e67" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/better_home.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Rails, API, OmniAuth
-                                </div>
-                                <div class="project-name">
-                                    Better Home
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                    <a href="http://i.imgur.com/JC1qT11.png" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/fideligard.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Angular, ui.router
-                                </div>
-                                <div class="project-name">
-                                    Fideligard Yahoo-Finance API Stocks
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                    <a href="https://camo.githubusercontent.com/ececcb8e17450d2b340dfea2ad54f7c394875ab3/687474703a2f2f692e696d6775722e636f6d2f514e55474231352e706e67" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/danebook.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Rails, Database, FullStack
-                                </div>
-                                <div class="project-name">
-                                    Danebook
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                    <a href="https://s11.postimg.org/y77rejalv/Screen_Shot_2016_09_17_at_11_57_40_PM.png" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/tetris.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Javascript, jQuery, Games
-                                </div>
-                                <div class="project-name">
-                                    Tetris
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+               <div proj ng-repeat="project in projects" project="project"></div>
             </div>
         </div>
     </section>
